@@ -22,7 +22,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DemoClass.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DemoClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DemoClass.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -30,6 +30,19 @@
               <folding>
                 <element signature="e#111#112#0" expanded="true" />
                 <element signature="e#154#155#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecondClass.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SecondClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#113#114#0" expanded="true" />
+                <element signature="e#172#173#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -53,6 +66,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/DemoClass.java" />
+        <option value="$PROJECT_DIR$/src/SecondClass.java" />
       </list>
     </option>
   </component>
@@ -447,6 +461,17 @@
           <folding>
             <element signature="e#111#112#0" expanded="true" />
             <element signature="e#154#155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SecondClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#113#114#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
           </folding>
         </state>
       </provider>

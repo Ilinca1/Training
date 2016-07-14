@@ -5,17 +5,17 @@ package exercises;
  */
 public class StringModifier {
 
-    public String backAround(String str){
+    public String backAround(String str) {
         char last = str.charAt(str.length() - 1);
         return last + str + last;
     }
 
-    public String everyNth(String str, int n){
-        String result = "";
-        result = result + str.charAt(0);
-        for(int i = 1; n*i< str.length();i++ ){
-            result = result + str.charAt(i*n);
+    public String everyNth(String str, int n) {
+        StringBuilder result = new StringBuilder();
+        result.append(str.charAt(0));
+        for (int i = 1; n * i < str.length(); i++) {
+            result.append(str.charAt(i * n));
         }
-            return result;
+        return result.toString();
     }
 }

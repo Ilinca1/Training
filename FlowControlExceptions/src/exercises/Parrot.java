@@ -5,11 +5,8 @@ package exercises;
  */
 public class Parrot {
     public boolean parrotTrouble(boolean talking, int hour){
-        if(talking == true && hour <7)
+        if(talking && hour <7)
             return true;
-        else if(talking == true && hour > 20)
-            return true;
-        else
-            return false;
+        else return talking && hour > 20;
     }
 }

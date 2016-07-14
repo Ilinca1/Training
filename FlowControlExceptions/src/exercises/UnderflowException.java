@@ -5,7 +5,7 @@ package exercises;
  */
 public class UnderflowException extends RuntimeException {
 
-    public UnderflowException(String message){
+    public UnderflowException(String message) {
         super(message);
     }
 

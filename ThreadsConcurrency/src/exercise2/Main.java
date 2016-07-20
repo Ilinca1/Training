@@ -10,9 +10,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        // 1 thread -> 50 ms
-        // 2 threads -> 49 ms
-        // 4 threads -> 46 ms
         WordsThread thread1 = new WordsThread(0, 999);
         WordsThread thread2 = new WordsThread(1000, 1999);
         WordsThread thread3 = new WordsThread(2000, 2999);
@@ -32,6 +29,12 @@ public class Main {
             e.printStackTrace();
         }
         Long after = System.currentTimeMillis();
+        Iterator itMap = WordsThread.map.entrySet().iterator();
+        while (itMap.hasNext()) {
+            Map.Entry pair = (Map.Entry) itMap.next();
+            System.out.println("The word \"" + pair.getKey() + "\" is " + (int) pair.getValue() * 100 / WordsThread.allWords.size() + "%");
+        }
+
         System.out.println("The time is : " + (after - before));
     }
 }

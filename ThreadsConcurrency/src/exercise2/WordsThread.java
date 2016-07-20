@@ -11,7 +11,7 @@ public class WordsThread extends Thread {
 
     static final String fileName = "D:/Workspace/ThreadsConcurrency/MyFile.txt";
     static List<String> allWords = new ArrayList<String>();
-    static Map<String, Integer> map = new ConcurrentHashMap<>();
+    static Map<String, Integer> map = new HashMap<>();
     static int numberOfWordsStart;
     static int numberOfWordsStop;
 
@@ -37,12 +37,7 @@ public class WordsThread extends Thread {
 
     public static void calculatePercentage() {
         for (int i = numberOfWordsStart; i < numberOfWordsStop; i++)
-            map.put(allWords.get(i), howManyTimes(allWords.subList(numberOfWordsStart, numberOfWordsStop), allWords.get(i)));
-        Iterator itMap = map.entrySet().iterator();
-        while (itMap.hasNext()) {
-            Map.Entry pair = (Map.Entry) itMap.next();
-            System.out.println("The word \"" + pair.getKey() + "\" is " + (int) pair.getValue() * 100 / allWords.size() + "%");
-        }
+            map.put(allWords.get(i), howManyTimes(allWords, allWords.get(i)));
     }
 
     public static void readFile() {

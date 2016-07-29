@@ -1,0 +1,7 @@
+*.iml
+*out
+.idea
+.xml
+target
+local-deployment
+web

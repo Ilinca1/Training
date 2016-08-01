@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>addUserJSP</servlet-name>
+        <jsp-file>/addUser.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addUserJSP</servlet-name>
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateUserJSP</servlet-name>
+        <jsp-file>/updateUser.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateUserJSP</servlet-name>
+        <url-pattern>/update-user</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>allUsersJSP</servlet-name>
+        <jsp-file>/allUsers.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>allUsersJSP</servlet-name>
+        <url-pattern>/users</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>

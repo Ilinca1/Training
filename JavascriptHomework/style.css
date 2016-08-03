@@ -1,0 +1,22 @@
+input[type=text], select, [type = password] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}        
+
+input[type=submit] {
+    width: 25%;
+    background-color: #4AAF00;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 1px solid #abbrc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}

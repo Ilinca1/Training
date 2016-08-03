@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New form</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type ="text/javascript" src="script.js"> </script>
+    </head>
+    <body>
+        <form id="myform" action = "index.html" onsubmit="return validate()">
+          First name:<br>
+          <input type="text" id="firstname"><span style="color:red" id="msgFirstname"></span>
+          <br>
+          Last name:<br>
+          <input type="text" id="lastname"><span style="color:red" id="msgLastname"></span>
+          <br>
+          Email:<br>
+          <input type="text" id="email"><span style="color:red" id="msgEmail"></span>
+          <br>
+          Password:<br>
+          <input type="password" id="pass1"><span style="color:red" id="msgPassword"></span>
+          <br>
+          Repeat Password:<br>
+          <input type="password" id="pass2"><span style="color:red" id="msgRepeat"></span>
+          <br>
+          <p>Select the car: </p>
+        <select>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+          <option value="Default" selected>Default</option>
+        </select>
+          <br>
+          <br>
+          <input type="submit" value="Submit" >
+        </form> 
+    </body>
+</html>
+
